@@ -133,10 +133,10 @@ class Facebook
 	 * Maps aliases to Facebook domains.
 	 */
 	public static $DOMAIN_MAP = array(
-		'api'      => 'https://api.dev.gianthello.com/',
-		'api_read' => 'https://api-read.dev.gianthello.com/',
-		'graph'    => 'https://graph.dev.gianthello.com/',
-		'www'      => 'https://dev.gianthello.com/'
+		'api'      => 'https://api.gianthello.com/',
+		'api_read' => 'https://api-read.gianthello.com/',
+		'graph'    => 'https://graph.gianthello.com/',
+		'www'      => 'https://www.gianthello.com/'
 	);
 
 	/**
