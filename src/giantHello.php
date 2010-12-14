@@ -133,10 +133,10 @@ class Facebook
 	 * Maps aliases to Facebook domains.
 	 */
 	public static $DOMAIN_MAP = array(
-		'api'      => 'https://api.gianthello.com/',
-		'api_read' => 'https://api-read.gianthello.com/',
-		'graph'    => 'https://graph.gianthello.com/',
-		'www'      => 'https://www.gianthello.com/'
+		'api'      => 'https://api.dev.gianthello.com/',
+		'api_read' => 'https://api-read.dev.gianthello.com/',
+		'graph'    => 'https://graph.dev.gianthello.com/',
+		'www'      => 'https://dev.gianthello.com/'
 	);
 
 	/**
@@ -646,7 +646,7 @@ class Facebook
 		if (curl_errno($ch) == 60) { // CURLE_SSL_CACERT
 			self::errorLog('Invalid or no certificate authority found, using bundled information');
 			curl_setopt($ch, CURLOPT_CAINFO,
-				dirname(__FILE__) . '/host.cert');
+				dirname(__FILE__) . '/gh_ca_chain_bundle.cert');
 			$result = curl_exec($ch); 
 		} 
 
